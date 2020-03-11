@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{9E35D50C-6276-42DB-948F-313C5FFC84F2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="snakegame\Food.cpp" />
+    <ClCompile Include="snakegame\main.cpp" />
+    <ClCompile Include="snakegame\Shape.cpp" />
+    <ClCompile Include="snakegame\Snake.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="snakegame\Food.h" />
+    <ClInclude Include="snakegame\sfml\include\sfml\Audio.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\audio\AlResource.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\audio\Export.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\audio\InputSoundFile.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\audio\Listener.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\audio\Music.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\audio\OutputSoundFile.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\audio\Sound.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\audio\SoundBuffer.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\audio\SoundBufferRecorder.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\audio\SoundFileFactory.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\audio\SoundFileReader.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\audio\SoundFileWriter.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\audio\SoundRecorder.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\audio\SoundSource.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\audio\SoundStream.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\Config.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\GpuPreference.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\Graphics.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\graphics\BlendMode.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\graphics\CircleShape.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\graphics\Color.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\graphics\ConvexShape.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\graphics\Drawable.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\graphics\Export.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\graphics\Font.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\graphics\Glsl.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\graphics\Glyph.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\graphics\Image.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\graphics\PrimitiveType.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\graphics\Rect.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\graphics\RectangleShape.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\graphics\RenderStates.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\graphics\RenderTarget.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\graphics\RenderTexture.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\graphics\RenderWindow.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\graphics\Shader.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\graphics\Shape.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\graphics\Sprite.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\graphics\Text.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\graphics\Texture.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\graphics\Transform.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\graphics\Transformable.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\graphics\Vertex.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\graphics\VertexArray.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\graphics\VertexBuffer.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\graphics\View.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\Main.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\OpenGL.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\System.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\system\Clock.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\system\Err.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\system\Export.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\system\FileInputStream.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\system\InputStream.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\system\Lock.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\system\MemoryInputStream.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\system\Mutex.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\system\NativeActivity.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\system\NonCopyable.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\system\Sleep.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\system\String.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\system\Thread.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\system\ThreadLocal.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\system\ThreadLocalPtr.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\system\Time.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\system\Utf.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\system\Vector2.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\system\Vector3.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\Window.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\window\Clipboard.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\window\Context.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\window\ContextSettings.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\window\Cursor.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\window\Event.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\window\Export.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\window\GlResource.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\window\Joystick.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\window\Keyboard.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\window\Mouse.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\window\Sensor.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\window\Touch.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\window\VideoMode.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\window\Window.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\window\WindowHandle.hpp" />
+    <ClInclude Include="snakegame\sfml\include\sfml\window\WindowStyle.hpp" />
+    <ClInclude Include="snakegame\Shape.h" />
+    <ClInclude Include="snakegame\Snake.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="snakegame\sfml\include\sfml\audio\SoundFileFactory.inl" />
+    <None Include="snakegame\sfml\include\sfml\graphics\Glsl.inl" />
+    <None Include="snakegame\sfml\include\sfml\graphics\Rect.inl" />
+    <None Include="snakegame\sfml\include\sfml\system\String.inl" />
+    <None Include="snakegame\sfml\include\sfml\system\Thread.inl" />
+    <None Include="snakegame\sfml\include\sfml\system\ThreadLocalPtr.inl" />
+    <None Include="snakegame\sfml\include\sfml\system\Utf.inl" />
+    <None Include="snakegame\sfml\include\sfml\system\Vector2.inl" />
+    <None Include="snakegame\sfml\include\sfml\system\Vector3.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
